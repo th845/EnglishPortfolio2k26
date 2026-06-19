@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H.M.T.K. Wijayarathna | Interactive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cinematic Loader -->
+    <div id="loader-wrapper">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p class="loader-text">Loading Cinematic Experience...</p>
+        </div>
+    </div>
+
+    <!-- Intro Popup Overlay -->
+    <div id="intro-popup" class="popup-overlay active">
+        <div class="popup-content glass-tile">
+            <h2>How the Portfolio Works</h2>
+            <ul class="popup-list">
+                <li><strong>Let the Environment to Set the Scene:</strong> The dynamic backgrounds are more than just scenery; they act as deliberate visual analogies that reflect the fundamental principles of each chapter before you even read a word.</li>
+                <li><strong>Look Beyond the Words:</strong> Pay close attention to the space behind the text. The true tale is about learning how the dynamic, real-world environment reflects what the narrator trying to explain.</li>
+            </ul>
+            <button id="close-popup" class="btn-glass">Enter Portfolio</button>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <nav id="top-navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">UNIVERSE</div>
+            
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <button id="confused-btn" class="dropbtn">Feeling Confused?</button>
+                <div class="dropdown">
+                    <button class="dropbtn">Explore</button>
+                    <div class="dropdown-content">
+                        <a href="#chapter-1">1. Mindfulness</a>
+                        <a href="#chapter-2">2. Happiness</a>
+                        <a href="#chapter-3">3. 30 Minutes</a>
+                        <a href="#chapter-4">4. Game Theory</a>
+                        <a href="#chapter-5">5. Cosmic</a>
+                        <a href="#chapter-6">6. Egypt</a>
+                        <a href="#chapter-7">7. Greece</a>
+                        <a href="#chapter-8">8. Mahen-Jodaro</a>
+                        <a href="#chapter-9">9. Cinematography</a>
+                        <a href="#chapter-10">10. Peace</a>
+                    </div>
+                </div>
+                <a href="#about" class="dropbtn" style="text-decoration: none;">About</a>
+            </div>
+
+            <!-- Mobile Hamburger Icon -->
+            <div class="hamburger" id="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Full-Screen Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#" id="mobile-confused-link" class="mobile-link" style="color: #fff;">Feeling Confused?</a>
+            <a href="#chapter-1" class="mobile-link">1. Mindfulness</a>
+            <a href="#chapter-2" class="mobile-link">2. Happiness</a>
+            <a href="#chapter-3" class="mobile-link">3. 30 Minutes</a>
+            <a href="#chapter-4" class="mobile-link">4. Game Theory</a>
+            <a href="#chapter-5" class="mobile-link">5. Cosmic</a>
+            <a href="#chapter-6" class="mobile-link">6. Egypt</a>
+            <a href="#chapter-7" class="mobile-link">7. Greece</a>
+            <a href="#chapter-8" class="mobile-link">8. Mahen-Jodaro</a>
+            <a href="#chapter-9" class="mobile-link">9. Cinematography</a>
+            <a href="#chapter-10" class="mobile-link">10. Peace</a>
+            <a href="#about" class="mobile-link">About</a>
+        </div>
+    </div>
+
+    <main id="main-scroller">
+        
+        <!-- SECTION 1: ABOUT ME (Video Background) -->
+        <section id="about" class="about-section">
+            <video class="bg-video" autoplay loop muted playsinline>
+                <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_074625_a81f018a-956b-43fb-9aee-4d1508e30e6a.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+            <div class="container">
+                <div class="about-content">
+                    <span class="eyebrow fade-in">Portfolio 2026</span>
+                    <h1 class="fade-in">
+                        <span class="first-word">
+                            <span class="student-id type-text" data-text="ICT/24/071" data-delay-offset="1000" data-speed="250"></span>
+                            Welcome
+                        </span> to The Universe of My Mind!
+                    </h1>
+                    <div class="intro-description fade-in">
+                        <p>I’ve always been fascinated by the big questions whether I'm analyzing world history, diving into quantum physics and neuroscience, exploring astrology, or getting lost in a sci-fi movie. Using the valuable YouTube resources provided by Madam as a stepping stone, I’ve built this e-portfolio to share my perspective. I hope my work brings you as much enjoyment as I found in creating it.</p>
+                    </div>
+                    <div class="scroll-down fade-in">
+                        <span>Begin Exploration &darr;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 1 (Intro): 1.mp4 -->
+        <div class="chapter" id="chapter-1">
+            <div class="bg-wrapper">
+            <video class="bg-sticky video-bg" autoplay loop muted playsinline>
+                <source src="1.mp4" type="video/mp4">
+            </video>
+        </div>
+            <section class="chapter-title-screen">
+                <h2 class="animate-text" data-text="Mindfulness against the most dangerous devil within us"></h2>
+            </section>
+            <section class="chapter-content">
+                <div class="tile-grid">
+                    <div class="glass-tile">
+                        <span class="ref">1.1 Summary</span>
+                        <h3>Habit Formation</h3>
+                        <p>In this TED Talk, psychotherapist Judson Brewer investigates the evolutionary mechanics of human habit formation. He describes the "trigger, behaviour, reward" learning cycle, which was originally created to encourage survival but now widely drives negative behaviours such as stress eating and smoking. Brewer suggests that mindfulness can help overcome this by changing the psychological framework from rigid cognitive resistance to genuine curiosity. To comprehend this concept in a real-world context, we can compare the brain's habit loop to a smartphone's "autocorrect" function: over time, the brain automatically corrects a negative trigger (such as stress) with a learnt behaviour (such as eating sweets) to gain a temporary reward.</p>
+                        <p>Brewer argues that by consciously acknowledging the sensory truth of a habit, people create a deep frustration that naturally breaks the automatic loop. This strategy bypasses the "cognitive control" of the prefrontal brain, which gradually goes offline during times of stress.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">1.2 Details</span>
+                        <h3>Content Metadata</h3>
+                        <ul class="meta">
+                            <li><strong>Title:</strong> A Simple Way to Break a Bad Habit</li>
+                            <li><strong>Date:</strong> June 15, 2026</li>
+                            <li><strong>Reference:</strong> TED / Published: February 24, 2016</li>
+                            <li class="video-container">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/-moW9jvvMr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </li>
+                            <li><a href="https://www.youtube.com/watch?v=-moW9jvvMr4" target="_blank" class="btn-glass">Watch on Youtube</a></li>
+                        </ul>
+                    </div><div class="glass-tile">
+                        <span class="ref">1.3 My Opinion</span>
+                        <h3>Reframing Failure</h3>
+                        <p>Brewer's methodology is remarkable because it fundamentally reframes behavioural failures. Rather than labelling a return as a simple lack of willpower, he defines it as an excessive dependence on the prefrontal cortex, which is the brain's youngest computational unit . The idea to use inbuilt, natural curiosity to demolish a habit from the inside out is very practical, moving the responsibility of change from exhausting intellectual pressure to natural observation.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">1.4 What I have learnt</span>
+                        <h3>Key Terms</h3>
+                        <p><strong>Viscerally Disenchanted:</strong> This is a phrase I have become aware of through video, describing a visceral realization that something is no longer enjoyable. It goes beyond mere intellectual realization of such a thing.</p>
+                        <p><strong>Cognitive Control:</strong> This is a phrase explained by the presentation as the process of employing intellect to manage behaviors, which usually fails when faced with stress.</p>
+                        <p><strong>Default Mode Network:</strong> I was introduced to this specific neural network, which is associated with self-referential processing and getting "sucked into" cravings.</p>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <!-- CHAPTER 2: 2.mp4 -->
+        <div class="chapter" id="chapter-2" style="background-color: #000;">
+            <div class="bg-wrapper">
+            <video class="bg-sticky video-bg" autoplay loop muted playsinline>
+                <source src="2.mp4" type="video/mp4">
+            </video>
+        </div>
+            <section class="chapter-title-screen">
+                <h2 class="animate-text" data-text="The hidden lifeline that outlasts fame and fortune"></h2>
+                <h3 class="type-text styled-subtopic" data-text="*happiness*" data-delay-offset="1600"></h3>
+            </section>
+            <section class="chapter-content">
+                <div class="tile-grid">
+                    <div class="glass-tile">
+                        <span class="ref">2.1 Summary</span>
+                        <h3>Groundbreaking Findings</h3>
+                        <p>In this TED talk, psychotherapist Robert Waldinger discusses the groundbreaking findings of the Harvard research of Adult Development, a 75-year longitudinal research that followed the lives of 724 men to discover what truly makes individuals healthy and happy. Waldinger questions the present millennial belief that wealth and celebrity are the ultimate aims. Instead, the concept breaks down to three key lessons: social connections reduce the negative impacts of loneliness, the quality (rather than number) of close relationships influences our physical health, and strong bonds actively safeguard cognitive performance of our brain.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">2.2 Details</span>
+                        <h3>Content Metadata</h3>
+                        <ul class="meta">
+                            <li><strong>Title:</strong> What Makes a Good Life? Lessons from the Longest Study on Happiness</li>
+                            <li><strong>Date:</strong> June 15, 2026</li>
+                            <li><strong>Reference:</strong> TED / Published: January 25, 2016</li>
+                            <li class="video-container">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/8KkKuTCFvzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </li>
+                            <li><a href="https://www.youtube.com/watch?v=8KkKuTCFvzI" target="_blank" class="btn-glass">Watch on Youtube</a></li>
+                        </ul>
+                    </div><div class="glass-tile">
+                        <span class="ref">2.3 My Opinion</span>
+                        <h3>Shock Absorbers</h3>
+                        <p>I appreciate how he demolished the idea that "being always too good " constituted a "good" relationship. He pointed out that couples might have arguments all day long, but as long as there is an underlying basis of solid attachment and trust, their brains and bodies are safe. The longitudinal aspect of this study gives obvious legitimacy to the claim that tending to our relationships is just as important as tending to our cholesterol.</p>
+                        <p>We can compare high-quality relationships to the "shock absorbers" on a vehicle. Just as shock absorbers do not remove potholes from the road, a secure relationship does not eliminate the physical pain or emotional distress of aging. However, a warm relationship "cushions" the impact, preventing structural damage to our mental and physical well-being while allowing us to travel smoothly through life's hard times.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">2.4 What I have learnt</span>
+                        <h3>Key Terms</h3>
+                        <p><strong>Octogenarian:</strong> The term "octogenarian" refers to individuals aged 80 to 89. It is a highly accurate vocabulary word that improves academic writing when discussing about elderly populations.</p>
+                        <p><strong>Slings and arrows:</strong> Waldinger used the idiomatic phrase "slings and arrows" to describe the challenges of ageing .</p>
+                        <p><strong>Buffer:</strong> In sociology, the term "buffer" refers to shielding or protecting someone from negative impacts.</p>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <!-- CHAPTER 3: 3.mp4 -->
+        <div class="chapter" id="chapter-3" style="background-color: #000;">
+            <div class="bg-wrapper">
+            <video class="bg-sticky video-bg" autoplay loop muted playsinline>
+                <source src="3.mp4" type="video/mp4">
+            </video>
+        </div>
+            <section class="chapter-title-screen">
+                <h2 class="animate-text" data-text="30 minutes that save our future"></h2>
+            </section>
+            <section class="chapter-content">
+                <div class="tile-grid">
+                    <div class="glass-tile">
+                        <span class="ref">3.1 Summary</span>
+                        <h3>Brain-Changing Benefits</h3>
+                        <p>In this TED Talk, neuroscientist and professor Wendy Suzuki investigates the enormous physiological effects of aerobic exercise on the human brain. The basic concept focuses on two crucial brain structures: the prefrontal cortex, which governs decision-making and focus, and the hippocampus, which is required for long-term memory formation and retention of memories. Suzuki adds that a single workout improves mood and concentration by flooding the brain with neurotransmitters such as dopamine and serotonin. Furthermore, persistent exercise physically changes the brain's anatomy by producing new brain cells, increasing the amount of both the hippocampus and the prefrontal cortex.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">3.2 Details</span>
+                        <h3>Content Metadata</h3>
+                        <ul class="meta">
+                            <li><strong>Title:</strong> The Brain-Changing Benefits of Exercise</li>
+                            <li><strong>Date:</strong> June 15, 2026</li>
+                            <li><strong>Reference:</strong> TED / Published: March 21, 2018</li>
+                            <li class="video-container">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/BHY0FxzoKZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </li>
+                            <li><a href="https://www.youtube.com/watch?v=BHY0FxzoKZE" target="_blank" class="btn-glass">Watch on Youtube</a></li>
+                        </ul>
+                    </div><div class="glass-tile">
+                        <span class="ref">3.3 My Opinion</span>
+                        <h3>Tangible Benefits</h3>
+                        <p>Her lecture is extremely interesting because she successfully bridges the gap between complex anatomical research and relatable personal experiences. It's particularly interesting how she shifted her whole study focus mid-career entirely based on her own physical transformation. Her statement that we do not need to become triathletes, but rather simply raise our heart rates for 30 minutes three to four times a week, makes the neurobiological benefits of exercise more tangible for the typical academic or student.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">3.4 What I have learnt</span>
+                        <h3>Key Terms</h3>
+                        <p><strong>Neurogenerative:</strong> Suzuki used the word "neurodegenerative" to refer to disorders like Alzheimer's and dementia that damage the prefrontal cortex and hippocampus. Incorporating this word increases the clarity of academic writing about cognitive decline with age.</p>
+                        <p><strong>Transient:</strong> The term "transient" refers to something that exists for a short period of time. Suzuki used it to express the immediate, but temporary, chemical mood increases generated by a single workout.</p>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <!-- CHAPTER 4: 4.mp4 -->
+        <div class="chapter" id="chapter-4" style="background-color: #000;">
+            <div class="bg-wrapper">
+            <video class="bg-sticky video-bg" autoplay loop muted playsinline>
+                <source src="4.mp4" type="video/mp4">
+            </video>
+        </div>
+            <section class="chapter-title-screen">
+                <h2 class="animate-text" data-text="Is this the beginning of world war iii ?"></h2>
+            </section>
+            <section class="chapter-content">
+                <div class="tile-grid">
+                    <div class="glass-tile">
+                        <span class="ref">4.1 Summary</span>
+                        <h3>Geopolitical Forecasts</h3>
+                        <p>In this interview, host Steven Bartlett talks with Professor Jiang about his geopolitical forecasts, specifically the path to world conflict and the potential downfall of the American empire. Jiang explains the mechanics of international relations using "game theory," which holds that nation-states act according to predetermined rules and incentives in order to maximise their advantages. Furthermore, Jiang expands on sociological control by using Plato's allegory of the cave (It explains how people naturally mistake superficial sensory illusions for reality until they are guided to discover the higher truths of the actual world) to explain how financial elites and institutional media project a carefully constructed, shadow-like reality onto the public in order to keep order.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">4.2 Details</span>
+                        <h3>Content Metadata</h3>
+                        <ul class="meta">
+                            <li><strong>Title:</strong> Professor Jiang: World War 3 Is About To Begin, Let Me Explain!</li>
+                            <li><strong>Date:</strong> June 15, 2026</li>
+                            <li><strong>Reference:</strong> The Diary Of A CEO / Published: May 7, 2026</li>
+                            <li class="video-container">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/BTJGr78-zyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </li>
+                            <li><a href="https://youtu.be/BTJGr78-zyw" target="_blank" class="btn-glass">Watch on Youtube</a></li>
+                        </ul>
+                    </div><div class="glass-tile">
+                        <span class="ref">4.3 My Opinion</span>
+                        <h3>Classical Philosophy & Geopolitics</h3>
+                        <p>Jiang's perspective is both provocative and structurally sound, skilfully combining classical philosophy (such as Plato and Hermetic philosophy) with current geopolitical strategy.While his predictions, such as an 80% to 90% chance of a third global war, lean significantly toward fatalism, his ability to break down complicated, multi-national processes into understandable analogies makes his theoretical framework extremely appealing. It offers a curious approach through which to examine macroeconomic changes and the incentives that drive global superpowers.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">4.4 What I have learnt</span>
+                        <h3>Key Terms</h3>
+                        <p><strong>Game Theory:</strong> Game Theory applies to geopolitics by predicting nations' behaviour based on local norms, resources, and strategic incentives. I also learned we are already playing these "games" every day. Every time we negotiate, navigate traffic, or collaborate on a project, we are the players in a game theory scenario.</p>
+                        <p><strong>Decapitation Strike:</strong> Jiang defines a decapitation strike as a targeted attack to destroy an opposing force's leadership, resulting in an imminent collapse.</p>
+                        <p><strong>Eschatology:</strong> Jiang says that various governments in the Middle East are motivated by eschatology, a philosophical and theological belief system about the end of history or humanity's ultimate destiny.</p>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <!-- CHAPTER 5: 5.mp4 -->
+        <div class="chapter" id="chapter-5" style="background-color: #000;">
+            <div class="bg-wrapper">
+            <video class="bg-sticky video-bg" autoplay loop muted playsinline>
+                <source src="5.mp4" type="video/mp4">
+            </video>
+        </div>
+            <section class="chapter-title-screen">
+                <h2 class="animate-text" data-text="The Mechanics of the Universe"></h2>
+            </section>
+            <section class="chapter-content">
+                <div class="tile-grid">
+                    <div class="glass-tile">
+                        <span class="ref">5.1 Summary</span>
+                        <h3>Cosmic Whirlpools</h3>
+                        <p>The discussion covers a wide range of cosmic topics, with a focus on the mechanics of black holes and statistical probability of extraterrestrial life. Tyson explains that every planet has a "escape velocity," or the speed at which an object must travel to escape its gravitational pull. If enough mass is packed into a single, extremely compressed space, the gravitational attraction becomes so strong that the escape velocity eventually exceeds the speed of light. Because light is the fastest thing in the universe, its inability to escape means that nothing else can, creating a three-dimensional hole in space.</p>
+                        <p>To understand this fundamentally, we can compare a black hole to a cosmic "whirlpool" that cannot escape anything. Regardless of how hard or fast an object (including light) tries to "swim" away, the inward current of gravity exceeds the universe's maximum speed limit, making escape physically impossible. Tyson also addresses humanity's physical interconnectedness, mathematically demonstrating that a single breath contains more molecules of air than there are total breaths in Earth's entire atmosphere, implying that we are constantly inhaling the exact molecules breathed by our historical ancestors.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">5.2 Details</span>
+                        <h3>Content Metadata</h3>
+                        <ul class="meta">
+                            <li><strong>Title:</strong> Astrophysicist WARNS: “You Wouldn’t Even See It Coming”</li>
+                            <li><strong>Date:</strong> June 15, 2026</li>
+                            <li><strong>Reference:</strong> The Diary Of A CEO Clips / Published: November 20, 2025</li>
+                            <li class="video-container">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/DNCq95AIrGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </li>
+                            <li><a href="https://www.youtube.com/watch?v=DNCq95AIrGs" target="_blank" class="btn-glass">Watch on Youtube</a></li>
+                        </ul>
+                    </div><div class="glass-tile">
+                        <span class="ref">5.3 My Opinion</span>
+                        <h3>A Cosmic Perspective</h3>
+                        <p>Tyson's ability to translate complex theoretical astronomy into understandable, common language is impressive. I thought his comparison about the quest for extraterrestrial life was extremely effective. he compares looking at a tiny percentage of the galaxy and claiming there are no aliens to scooping a single cup of water from the ocean and concluding there are no whales. Furthermore, his claim that studying astrophysics results in a unifying "cosmic perspective" rather than nihilism (the life is meaningless) is a strong demonstration of the fusion of hard science and the humanities.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">5.4 What I have learnt</span>
+                        <h3>Key Terms</h3>
+                        <p><strong>Escape Velocity:</strong> This physics phrase describes the exact speed needed to break escape from a massive body's gravitational field.</p>
+                        <p><strong>Nihilism:</strong> In this video, I learned about nihilism, a mentality that rejects religious and moral values and believes life has no meaning.</p>
+                        <p><strong>Cosmic Perspective:</strong> I was introduced to this philosophical perspective, which proposes that a thorough, scientifically informed understanding of the universe's vastness would theoretically remove human conflict and tribalism, so avoiding "marching armies."</p>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <!-- CHAPTER 6: 6.mp4 -->
+        <div class="chapter" id="chapter-6" style="background-color: #000;">
+        <div class="bg-wrapper">
+            <video class="bg-sticky video-bg" autoplay loop muted playsinline>
+                <source src="6.mp4" type="video/mp4">
+            </video>
+        </div>
+            <section class="chapter-title-screen">
+                <h2 class="animate-text" data-text="The immortal 5000 year old legend"></h2>
+            </section>
+            <section class="chapter-content">
+                <div class="tile-grid">
+                    <div class="glass-tile">
+                        <span class="ref">6.1 Summary</span>
+                        <h3>Egypt's 3,000-Year History</h3>
+                        <p>In this National Geographic educational documentary, the narrator explores into Egypt's 3,000-year history and deep cultural changes. Around 3100 BC, the empire was united into a single state and governed by a dynasty of approximately 300 rulers who served as divine liaisons between humans and the gods. Apart from their well-known religious traditions, like as mummification and the construction of massive monuments like the Great Pyramids, the Egyptians pioneered mathematics, engineering, and linguistics. They invented the "cubit" for architectural precision and combined astronomy and mathematics to create the 365-day solar calendar and the 24-hour day. </p>
+                        <p>Furthermore, while traditional hieroglyphs were highly decorative and carved into static stone monuments, papyrus made administrative communication and record-keeping more mobile and broad, allowing the civilization's administrative skills to rapidly grow and flourish across the empire.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">6.2 Details</span>
+                        <h3>Content Metadata</h3>
+                        <ul class="meta">
+                            <li><strong>Title:</strong> Ancient Egypt 101</li>
+                            <li><strong>Date:</strong> June 16, 2026</li>
+                            <li><strong>Reference:</strong> National Geographic History / Published: December 17, 2017</li>
+                            <li class="video-container">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/hO1tzmi1V5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </li>
+                            <li><a href="https://www.youtube.com/watch?v=hO1tzmi1V5g" target="_blank" class="btn-glass">Watch on Youtube</a></li>
+                        </ul>
+                    </div><div class="glass-tile">
+                        <span class="ref">6.3 My Opinion</span>
+                        <h3>Functional Necessities & Innovation</h3>
+                        <p>This documentary beautifully demonstrates how functional necessities drive significant cultural innovation. I thought it especially fascinating that the name "Pharaoh," which translates to "great house," was never the formal title of the rulers during their time; it only became associated with them in the modern age as a result of the Hebrew Bible. This highlights the significance of deeply examining historical language in academic research, as words used now frequently include post-historical meanings that ancient civilisations themselves did not recognise.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">6.4 What I have learnt</span>
+                        <h3>Key Terms</h3>
+                        <p><strong>Divine Liasions:</strong> The term "divine liaisons" refers to a sacred or spiritual relationship between a person and a godlike or heavenly being. It can also be used poetically to describe a perfect, mystical, or fate-guided relationship between two people.</p>
+                        <p><strong>Cubit:</strong> The video introduced me to the cubit, an ancient unit of measurement used to create large structures with precise geometry.</p>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <!-- CHAPTER 7: 7.png -->
+        <div class="chapter" id="chapter-7" style="background-color: #000;">
+        <div class="bg-wrapper">
+            <video class="bg-sticky video-bg" autoplay loop muted playsinline>
+                <source src="7.mp4" type="video/mp4">
+            </video>
+        </div>
+            <section class="chapter-title-screen">
+                <h2 class="animate-text" data-text="The Birthplace Of Western Civilization"></h2>
+            </section>
+            <section class="chapter-content">
+                <div class="tile-grid">
+                    <div class="glass-tile">
+                        <span class="ref">7.1 Summary</span>
+                        <h3>Ancient Greece's Influence</h3>
+                        <p>This National Geographic documentary presents an overview of Ancient Greece's significant and long-lasting influence on global history. Originating almost 4,000 years ago near the Aegean Sea, the civilization spread across huge territory thanks to its powerful military, whose heroic achievements inspired the establishment of the early Olympic Games. Rather than a single cohesive nation, Greece was made up of over 1,500 autonomous city-states, the most notable of which was Athens, which pioneered large-scale democracy. Aside from politics and conflict, the ancient Greeks left an indelible cultural legacy that moulded Western civilisation, including significant contributions to philosophy, language, polytheistic religion, and famous architectural styles such as those found in the Parthenon.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">7.2 Details</span>
+                        <h3>Content Metadata</h3>
+                        <ul class="meta">
+                            <li><strong>Title:</strong> Ancient Greece 101</li>
+                            <li><strong>Date:</strong> June 16, 2026</li>
+                            <li><strong>Reference:</strong> National Geographic / Published: April 22, 2018</li>
+                            <li class="video-container">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/6bDrYTXQLu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </li>
+                            <li><a href="https://www.youtube.com/watch?v=6bDrYTXQLu8" target="_blank" class="btn-glass">Watch on Youtube</a></li>
+                        </ul>
+                    </div><div class="glass-tile">
+                        <span class="ref">7.3 My Opinion</span>
+                        <h3>Foundational Pillars</h3>
+                        <p>This documentary effectively summarises foundational pillars of Western civilization into an easily comprehended manner.. I was most impressed by how profoundly rooted Greek culture is in our modern life. According to the presentation, not only did their religion influence the ancient Romans, but their intellectual studies of ethics, philosophies and natural law still strongly support our political, self improvement and scientific achievements. Furthermore, tracing the English language back to a 3,400-year-old linguistic root system highlights the continuing, living heritage of Greek civilization.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">7.4 What I have learnt</span>
+                        <h3>Key Terms</h3>
+                        <p><strong>Anthropomorphic:</strong> I learnt this specific term, which refers to assigning human qualities, emotions, or behaviours to a god, animal, or object. It was employed to characterise the nature of the gods in ancient Greek religion [02:43]. This is an excellent vocabulary word for literary and historical study.</p>
+                        <p><strong>Sovereign:</strong> The documentary used the term "sovereign" to characterise city-states that enjoyed supreme power and operated independently without external inspection (00:55).</p>
+                        <p><strong>Relief:</strong> In architectural and artistic contexts, I discovered that a "relief" is a form of sculptural method where the sculpted features remain attached to a solid background of the same material, which was highly popularised by the Greeks [02:20].</p>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <!-- CHAPTER 8: 8.png -->
+        <div class="chapter" id="chapter-8" style="background-color: #000;">
+        <div class="bg-wrapper">
+            <video class="bg-sticky video-bg" autoplay loop muted playsinline>
+                <source src="8.mp4" type="video/mp4">
+            </video>
+        </div>
+            <section class="chapter-title-screen">
+                <h2 class="animate-text" data-text="The Lost City Ahead of Its Time"></h2>
+            </section>
+            <section class="chapter-content">
+                <div class="tile-grid">
+                    <div class="glass-tile">
+                        <span class="ref">8.1 Summary</span>
+                        <h3>Indus Urban Centers</h3>
+                        <p>This National Geographic educational presentation investigates the ruins of Mohenjo-Daro, one of the world's first great urban centres, which was built approximately 2500 BC in what is now Pakistan. The city, which was part of the Indus Valley Civilization, had an extremely precise grid structure and exceptional water management systems, including personal indoor plumbing and a sophisticated sewage network, which was built centuries before the famous Roman baths. Mohenjo-Daro's architecture, unlike that of ancient Egypt or Mesopotamia, lacked obvious palaces or royal tombs, suggesting a highly egalitarian society that prioritised public welfare and civil engineering over the glorification of particular monarchs.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">8.2 Details</span>
+                        <h3>Content Metadata</h3>
+                        <ul class="meta">
+                            <li><strong>Title:</strong> Mohenjo Daro 101 | National Geographic</li>
+                            <li><strong>Date:</strong> June 16, 2026</li>
+                            <li><strong>Reference:</strong> National Geographic / Published: September 8, 2017</li>
+                            <li class="video-container">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/QUng-iHhSzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </li>
+                            <li><a href="https://www.youtube.com/watch?v=QUng-iHhSzU" target="_blank" class="btn-glass">Watch on Youtube</a></li>
+                        </ul>
+                    </div><div class="glass-tile">
+                        <span class="ref">8.3 My Opinion</span>
+                        <h3>Conceptual Change</h3>
+                        <p>The discovery of Mohenjo-Daro represents an important conceptual change in how we judge "advanced" civilisations. It's fascinating that a civilization could achieve such high levels of urban planning and standardized craftsmanship without the presence of a centralized religious or political figurehead. The fact that they prioritised indoor plumbing and public baths over large temples or monuments implies a society that might have prioritised egalitarian civil engineering over supreme selfishness, a concept that feels surprisingly modern.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">8.4 What I have learnt</span>
+                        <h3>Key Terms</h3>
+                        <p><strong>Egalitarian:</strong> The term "egalitarian" refers to a society that believes in or operates under the concept that all individuals are fundamentally equal and deserve equal rights and opportunities [02:30]. In academic writing, using this term effectively conveys complex social structures.</p>
+                        <p><strong>Citadel:</strong> I discovered that a "citadel" is a fortress or heavily centralized core of a city, which in Mohenjo-Daro's case housed public monuments such as the Great Bath rather than a royal palace [01:10].</p>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <!-- CHAPTER 9: 9.png -->
+        <div class="chapter" id="chapter-9" style="background-color: #000;">
+        <div class="bg-wrapper">
+            <video class="bg-sticky video-bg" autoplay loop muted playsinline>
+                <source src="9.mp4" type="video/mp4">
+            </video>
+        </div>
+            <section class="chapter-title-screen">
+                <h2 class="animate-text" data-text="The Hidden Cinematic Language Behind Oppenheimer"></h2>
+            </section>
+            <section class="chapter-content">
+                <div class="tile-grid">
+                    <div class="glass-tile">
+                        <span class="ref">9.1 Summary</span>
+                        <h3>Anatomy of a Scene</h3>
+                        <p>In this "Anatomy of a Scene" feature, filmmaker Christopher Nolan discusses the opening sequence of his biographical thriller "Oppenheimer." Nolan explains how simple, practical images—such as raindrops hitting water or a vibration in a bowl of water—were used to replicate the strength of the Trinity test and the internal atomic world. He describes the division of the narrative into "Fission" (subjective colour sequences) and "Fusion" (objective black-and-white sequences). Furthermore, Nolan details the use of claustrophobic, large-format camera techniques to capture character performances, emphasizing the film's reliance on analog visual effects rather than computer-generated imagery.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">9.2 Details</span>
+                        <h3>Content Metadata</h3>
+                        <ul class="meta">
+                            <li><strong>Title:</strong> Watch the Opening Scene of ‘Oppenheimer’ With Christopher Nolan | Anatomy of a Scene</li>
+                            <li><strong>Date:</strong> June 16, 2026</li>
+                            <li><strong>Reference:</strong> The New York Times / Published: January 23, 2024</li>
+                            <li class="video-container">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/o_GPSEVEasE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </li>
+                            <li><a href="https://www.youtube.com/watch?v=o_GPSEVEasE" target="_blank" class="btn-glass">Watch on Youtube</a></li>
+                        </ul>
+                    </div><div class="glass-tile">
+                        <span class="ref">9.3 My Opinion</span>
+                        <h3>Directorial Skill</h3>
+                        <p>Nolan's dedication to physical realism through analog techniques is deep. I thought his explanation of how the "stuttering" effect on black-and-white film was intentionally created by changing the camera's frame rate was a wonderful demonstration of cinematic storytelling strategy. This approach creates a subconscious "vibration" in the viewer's experience, mirroring Oppenheimer's own internal stress. His use of depth of field, such as keeping characters out of focus until their narrative importance rises, shows the deep technical mastery behind the film's emotional impact.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">9.4 What I have learnt</span>
+                        <h3>Key Terms</h3>
+                        <p><strong>Motif:</strong> I learned about the term "motif," which refers to a reoccurring theme or visual element throughout a film, such as the raindrops in Oppenheimer that represent atomic particles.</p>
+                        <p><strong>Venal:</strong> This specific term was used by Nolan to describe the corrupt, politically motivated nature of certain characters in the objective Fusion timeline. It refers to someone motivated by a tendency to bribery or corrupt goals.</p>
+                        <p><strong>Claustrophobic:</strong> Nolan used this word to describe the intense, restricted mood created by using huge IMAX lenses for close-up performances, effectively trapping the viewer within the character's psychology.</p>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <!-- CHAPTER 10: 10.png -->
+        <div class="chapter" id="chapter-10" style="background-color: #000;">
+        <div class="bg-wrapper">
+            <video class="bg-sticky video-bg" autoplay loop muted playsinline>
+                <source src="10.mp4" type="video/mp4">
+            </video>
+        </div>
+            <section class="chapter-title-screen">
+                <h2 class="animate-text" data-text="Finding Peace and Purpose In a Chaotic World"></h2>
+            </section>
+            <section class="chapter-content">
+                <div class="tile-grid">
+                    <div class="glass-tile">
+                        <span class="ref">10.1 Summary</span>
+                        <h3>Mindfulness & The TIME Framework</h3>
+                        <p>In this podcast episode, Jay Shetty emphasizes that true peace of mind and purpose must be developed inwardly rather than sought through external validation. He suggests a "TIME" morning practice—Thankfulness, Insight, Meditation, and Exercise—to strengthen emotional defence before interacting with the world. The discussion also covers the concept of "Dharma," or finding one's unique purpose, and the dangers of "method acting" through life by fulfilling other people's ambitions to satisfy the ego.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">10.2 Details</span>
+                        <h3>Content Metadata</h3>
+                        <ul class="meta">
+                            <li><strong>Title:</strong> If You STRUGGLE To Find Meaning & Purpose In Your Life, WATCH THIS! | Jay Shetty</li>
+                            <li><strong>Date:</strong> June 17, 2026</li>
+                            <li><strong>Reference:</strong> Jay Shetty Podcast / Published: February 24, 2023</li>
+                            <li class="video-container">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/6qZDZiscquo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </li>
+                            <li><a href="https://www.youtube.com/watch?v=6qZDZiscquo" target="_blank" class="btn-glass">Watch on Youtube</a></li>
+                        </ul>
+                    </div><div class="glass-tile">
+                        <span class="ref">10.3 My Opinion</span>
+                        <h3>Ancient Wisdom & Modern Life</h3>
+                        <p>Shetty's framework is successful because it combines ancient monastic concepts with modern, actionable applications. His framing of low self-esteem as a form of ego (because it is still self-obsessed) is a grounding perspective. Furthermore, his emphasis on selfless service as a cure for internal anxiety offers an effective philosophy for personal growth in a chaotic world.</p>
+                    </div>
+                    <div class="glass-tile stagger">
+                        <span class="ref">10.4 What I have learnt</span>
+                        <h3>Key Terms</h3>
+                        <p><strong>Method Acting:</strong> Shetty used the term "method acting" to describe the phenomenon of adopting social personas until losing touch with the true self.</p>
+                        <p><strong>Specific Gratitude:</strong> I learned about the importance of "specific gratitude," a psychological discipline where identifying exact, localised moments of thanks (e.g., being thankful for a specific chat with a colleague), which offers far deeper cognitive advantages than "generic gratitude" (e.g., being thankful for the sky or water).</p>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>&copy; 2026 H.M.T.K. Wijayarathna. All rights reserved.</p>
+            </footer>
+        </div>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
